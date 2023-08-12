@@ -18,7 +18,7 @@ const Book = ({ img, title, author }) => {
     console.log(title);
    }}
   >
-   <img src={img} alt='' />
+   <img src={img} alt='' width="300"/>
    <h1 onClick={() => console.log(title)}>{title}</h1>
    <h4>{author}</h4>
    <button type='button' onClick={clickHandler}>
