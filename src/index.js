@@ -11,8 +11,9 @@ import {greeting} from './testing/testing'
 function QuestionMarkBlock() {
   return (
     <>
-    <div className='header'>
-      <h1><img src="question_mark.png" alt='' width="100"/> 超級瑪利歐人物介紹</h1>
+    <div class="nav">
+      <img src="question_mark.png" alt="" width="50"/>
+      <h1> 超級瑪利歐人物介紹</h1>
     </div>
     </>
   );

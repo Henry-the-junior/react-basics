@@ -11,9 +11,15 @@ body {
   color: #222;
 }
 
-.header {
-  margin-top: 1rem;
+.nav {
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+}
+  
+.nav img {  
   margin-left: 8rem;
+  margin-right: 1rem;
 }
 
 .characterList {
