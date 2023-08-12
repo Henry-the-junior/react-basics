@@ -8,6 +8,16 @@ import {data} from './characters'
 import Character from './Character'
 import {greeting} from './testing/testing'
 
+function QuestionMarkBlock() {
+  return (
+    <>
+    <div className='header'>
+      <h1><img src="question_mark.png" alt='' width="100"/> 超級瑪利歐人物介紹</h1>
+    </div>
+    </>
+  );
+}
+
 function CharacterList() {
   console.log(greeting);
   return (
@@ -19,6 +29,14 @@ function CharacterList() {
   );
 }
 
+function MarioCharactersPage() {
+  return (
+    <>
+    <QuestionMarkBlock />
+    <CharacterList />
+    </>
+  );
+}
 
 
-ReactDom.render(<CharacterList />, document.getElementById('root'));
+ReactDom.render(<MarioCharactersPage />, document.getElementById('root'));
