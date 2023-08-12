@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Book = ({ img, title, author }) => {
+const Character = ({ img, title, intro }) => {
  // attribute, eventHandler
  // onClick, onMouseOver
  const clickHandler = (e) => {
@@ -8,27 +8,27 @@ const Book = ({ img, title, author }) => {
   console.log(e.target);
   alert('hello world');
  };
- const complexExample = (author) => {
-  console.log(author);
+ const complexExample = (intro) => {
+  console.log(intro);
  };
  return (
   <article
-   className='book'
+   className='character'
    onMouseOver={() => {
     console.log(title);
    }}
   >
-   <img src={img} alt='' width="300"/>
+   <img src={img} alt=''/>
    <h1 onClick={() => console.log(title)}>{title}</h1>
-   <h4>{author}</h4>
+   <h4>{intro}</h4>
    <button type='button' onClick={clickHandler}>
     reference example
       </button>
-   <button type='button' onClick={() => complexExample(author)}>
+   <button type='button' onClick={() => complexExample(intro)}>
     more complex example
       </button>
   </article>
  );
 };
 
-export default Book
+export default Character

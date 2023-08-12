@@ -4,16 +4,16 @@ import ReactDom from 'react-dom';
 // CSS
 import './index.css';
 
-import {data} from './books'
-import SpecificBook from './Book'
+import {data} from './characters'
+import Character from './Character'
 import {greeting} from './testing/testing'
 
-function BookList() {
+function CharacterList() {
   console.log(greeting);
   return (
-    <section className='booklist'>
-      {data.map((book, index) => {
-        return <SpecificBook key={book.id} {...book}></SpecificBook>;
+    <section className='characterList'>
+      {data.map((character, index) => {
+        return <Character key={character.id} {...character}></Character>;
       })}
     </section>
   );
@@ -21,4 +21,4 @@ function BookList() {
 
 
 
-ReactDom.render(<BookList />, document.getElementById('root'));
+ReactDom.render(<CharacterList />, document.getElementById('root'));
