@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDom from 'react-dom';
+import ReactDOM from 'react-dom/client';
 
 // CSS
 import './index.css';
@@ -11,7 +11,7 @@ import {greeting} from './testing/testing'
 function QuestionMarkBlock() {
   return (
     <>
-    <div class="nav">
+    <div className="nav">
       <img src="question_mark.png" alt="" width="50"/>
       <h1> 超級瑪利歐人物介紹</h1>
     </div>
@@ -33,11 +33,16 @@ function CharacterList() {
 function MarioCharactersPage() {
   return (
     <>
-    <QuestionMarkBlock />
-    <CharacterList />
+      <QuestionMarkBlock />
+      <CharacterList />
     </>
   );
 }
 
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <MarioCharactersPage />
+);
 
-ReactDom.render(<MarioCharactersPage />, document.getElementById('root'));
+
+// ReactDom.render(<MarioCharactersPage />, document.getElementById('root'));
