@@ -1,3 +1,8 @@
+# React 基本觀念的練習
+
+💻 Video Link: https://youtu.be/CG_5at0fejU (呈現整個專案的模樣)
+💻 Reference Tutorial: https://www.youtube.com/watch?v=4UZrsTqkcW4
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
